@@ -1,13 +1,21 @@
 var Utility =require('./Utility');
+var read =require('readline-sync');
 
-var read=Utility.input();
-console.log("Hello UserName, How are you?");
-str1="Hello UserName, How are you?"
-read.question("Enter the string you want to replace:",function(str2)
-{
-read.question("Enter the string you want to replace with:",function(str3)
-{
-    Utility.replace(str1,str2,str3);
-    read.close();
-})
-})
+//function replace(){
+
+    // var read=Utility.input();
+     //DECLARE DATA
+        str1="Hello username how are you?"
+   //TAKING INPUT FORM USER
+       var str2= read.question("Enter string u want to repalce: ")
+        var str3=read.question("Enter string you  want to replace with: ")
+            
+                   Utility.replace(str1,str2,str3);
+                   //read.close();
+        
+        
+
+    
+   // }
+
+ //replace();
