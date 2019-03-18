@@ -1,4 +1,15 @@
 
+/******************************************************************************
+ *  Execution       :   1. default node         cmd> node MergeSort.js 
+ *  Purpose          : prints the  sorted list using merge sort
+ * 
+ *  @file                 : MergeSort.js
+ *  @overview       : program  to do Merge Sort of list of Strings. 
+ *  @author          : VAIBHAW
+ *  @version         : 1.0
+ *  @since             : 15/03/2019
+ *
+ ******************************************************************************/
 var Utility =require('./Utility');
 var read = require('readline-sync');
 

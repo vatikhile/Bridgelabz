@@ -17,49 +17,18 @@ module.exports = {
       if (string1.length !== string2.length) {
 
         console.log("strings are not anagram");
-        // return false;
       }
-      // else {
-      //   console.log("string are in same length");
-
-
-      // }
-      
+    
 else{
       for (var i = 0; i < string1.length; i++) {
 
+       for (var t = 0; t < string2.length; t++) {
 
-
-      
-
-        for (var t = 0; t < string2.length; t++) {
-
-          //counter = 0
-
-          if (string2[t].toLowerCase() == string1[i].toLowerCase()) {
-            //counter++;
-            count++;
+         if (string2[t].toLowerCase() == string1[i].toLowerCase()) {
+             count++;
             break;
           }
-          //   else
-          // {
-          //   console.log("string are not anagram");
-
-
-          // } 
-
-
-          //console.log("string are not  anagram")
-        }
-
-
-
-
-        // if (count == string1.length) {
-
-        // }
-
-
+         }
       }
 
       if (count == string1.length ) {
@@ -118,7 +87,8 @@ else{
 // }
 getPrimeNumber(number) 
 {
-
+if (number<=1000)
+  {
   for (var i = 1; i <= number; i++) {
     var temp = 0;
     for (var j = 2; j < i - 1; j++) {
@@ -128,12 +98,17 @@ getPrimeNumber(number)
     }
 
     if (temp == 0) {
-     console.log("Number is Prime " + i);
+     console.log("Prime Number:" + i);
     }
   }
 
   return number;
+  }
+  else 
+  {
+    console.log("Number is out of range")
 
+  }
 },
 isPrime(num) {
   try {

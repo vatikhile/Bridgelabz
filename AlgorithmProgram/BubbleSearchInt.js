@@ -1,3 +1,14 @@
+ /******************************************************************************
+ *  Execution       :   1. default node         cmd> node BubbleSearchInt.js 
+ *  Purpose         : prints the sorted order  
+ *
+ *  @file                 :BubbleSearchInt.js 
+ *  @overview       : BubbleSort method for integer
+ *  @author          : VAIBHAW
+ *  @version         : 1.0
+ *  @since             : 15/03/2019
+ *
+ ******************************************************************************/
 var Utility =require('./Utility');
 /**
  * 

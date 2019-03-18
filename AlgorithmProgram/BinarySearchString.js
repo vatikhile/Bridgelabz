@@ -1,9 +1,11 @@
+
+  
 /******************************************************************************
- *  Execution       :   1. default node         cmd> node BubbleSearchString.js 
- *  Purpose         : prints the sorted order string
+ *  Execution       :   1. default node         cmd> node BinarySearchString.js 
+ *  Purpose         : Search  a integer `input number ` is available  or not.
  *
- *  @file                 : BubbleSearchString.js
- *  @overview       : Bubble Sort method for string
+ *  @file                 : BinarySearchString.js
+ *  @overview       : BinarySearch method for integer
  *  @author          : VAIBHAW
  *  @version         : 1.0
  *  @since             : 15/03/2019
