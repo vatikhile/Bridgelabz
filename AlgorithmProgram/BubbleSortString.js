@@ -19,5 +19,10 @@ for(var i =0 ;i<size;i++)
 
 
 }
-
+if (typeof arr1 == "string")
+{
 Utility.bubbleSortString(arr1);
+}
+else {
+console.log("invalid it accept only string");
+}

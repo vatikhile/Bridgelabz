@@ -13,6 +13,6 @@ var Utility = require('./Utility');
 var Utility = require('./Utility');
 var read = require('readline-sync');
 //taking the input from the user
-var num = read.question('enter the distinct number');
+var num = read.questionInt('enter the distinct number');
 //calling the method       
 Utility.coupon(num);

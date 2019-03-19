@@ -12,6 +12,6 @@
 var Utility =require('./Utility');
 
 var read = require('readline-sync');
-var num= read .question("enter The number:");
+var num= read .questionInt("enter The number:");
 
 Utility.toBinary(num);

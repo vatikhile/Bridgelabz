@@ -1,4 +1,6 @@
 var read = require('readline-sync');
+
+//-------------------------------------LOGIC'S-----------------------------------------------
 module.exports = {
    input() {
       var readline = require('readline');
@@ -13,18 +15,12 @@ module.exports = {
     * PURPOSE Take User Name as Input. Ensure UserName has min 3 char
     * @param Print the String with User Name 
     */
-   replace(str1, str2, str3) {
-
-      var str1, str2, str3;
-      //computation
-      if (str3.length >= 3) {
-         var str4 = str1.replace(str2, str3);
-         //output
-         console.log("New String: " + str4);
-      }
-      else {
-         console.log("usermane has been minmum 3 charcter")
-      }
+   replace(name) {
+      var stringreplace ="hello <<username>> how are you?"
+      var result =stringreplace.replace('<<username>>',name);
+      console.log(result);
+      
+     
    },
    /**********************************Flipcoin********************************************/
    /**
@@ -204,7 +200,7 @@ module.exports = {
          for (var j = 0; j < column; j++) {
 
             var element = read.question("Enter the value :")
-            arr[i][j] += element + "";
+            arr[i][j]= element+"";
 
          }
 
@@ -263,35 +259,6 @@ module.exports = {
 
    },
 
-   /**************************************permutation****************************************/
-   /**
-    * PURPOSE permutation of a String using iterative method and Recursion method. Check if the arrays returned by two string functions are equal.
-    * @param Print permutation of a String.
-    */
-   Permutation(char_arr, i) {
-      var Utility = require('./Utility');
-      if (i == char_arr.length - 1) {
-         // print the shuffled string 
-         var str = "";
-         for (var j = 0; j < char_arr.length; j++) {
-            str = str + char_arr[j];
-         }
-         console.log(str);
-      }
-      else {
-         for (var j = i; j < char_arr.length; j++) {
-            var tmp = char_arr[i];
-            char_arr[i] = char_arr[j];
-            char_arr[j] = tmp;
-            console.log(char_arr[j])
-            Utility.Permutation(char_arr, i + 1)
-            var tmp1 = char_arr[i];
-            char_arr[i] = char_arr[j];
-            char_arr[j] = tmp1;
-
-         }
-      }
-   },
    /**********************************StopWatch********************************************/
    /**
     * PURPOSE Write a Stopwatch Program for measuring the time that elapses between the start and end clicks
@@ -318,7 +285,11 @@ module.exports = {
       var date = new Date();
       return date.getMilliseconds();
    },
-
+   /***************************************Quadratic***************************************/
+   /**
+    * PURPOSE find the roots of the equation a*x*x + b*x + c. Since the equation is x*x, hence there are 2 roots. 
+    * @param Print find the roots of x.
+*/
 
    findRooteOfEquation(a, b, c) {
 
@@ -350,155 +321,5 @@ module.exports = {
          console.log("Wind chill  = " + w);
       }
    },
-
-//    intializeGame() {
-//       var game = [];
-//       for (let i = 0; i <= 2; i++) {
-//          game.push([]);
-//          for (let j = 0; j <= 2; j++)
-//             game[i][j] = '-';
-//       }
-//       return game;
-//    },
-
-//    random() {
-//       var value = Math.floor(Math.random() * 3);
-//       console.log(value + 1);
-//       return value;
-//    },
-
-//    mark(game, x, y, value) {
-//       if (game[x][y] == '-')
-//          game[x][y] = value;
-//       for (let i = 0; i <= 2; i++) {
-//          var print = [];
-//          for (let j = 0; j <= 2; j++)
-//             print[j] = game[i][j];
-//          console.log(print);
-//       }
-//       return game;
-//    }
-//    ,
-//    computerPlayer(game) {
-//       var arr;
-//       var flag = false;
-//       while (flag == false) {
-//          var x = this.random();
-//          var y = this.random();
-//          if (game[x][y] == '-') {
-//             arr = this.mark(game, x, y, 'O');
-//             flag = true;
-//          }
-//       }
-//       return game;
-//    }
-//    ,
-//    userPlayer(game) {
-//       var flag = false;
-//       while (flag == false) {
-//          console.log("Enter the row value:");
-//          let x = read.questionInt('Enter the value of x within 1,2,3 : ') - 1;
-//          let y = read.questionInt('Enter the value of y within 1,2,3 : ') - 1;
-//          if (game[x][y] == '-') {
-//             this.mark(game, x, y, 'X');
-//             flag = true;
-//          }
-//          else
-//             console.log("Please enter the correct choice");
-//       }
-//       return game;
-//    }
-//    ,
-//    check(game) {
-//       for (let i = 0; i <= 2; i++) {
-//          if (game[i][0] == game[i][1] && game[i][1] == game[i][2]) {
-//             if (game[i][0] == 'O' || game[i][0] == 'X') {
-//                return true;
-//             }
-//          }
-//          if (game[0][i] == game[1][i] && game[1][i] == game[2][i]) {
-//             if (game[0][i] == 'O' || game[0][i] == 'X') {
-//                return true;
-//             }
-//          }
-//       }
-//       var k = 0, l = 0;
-//       if (game[k][k] == game[k + 1][k + 1] && game[k + 1][k + 1] == game[k + 2][k + 2]) {
-//          if (game[0][0] == 'O' || game[0][0] == 'X') {
-//             return true;
-//          }
-//       }
-//       if (game[l][l + 2] == game[l + 1][l + 1] && game[l + 1][l + 1] == game[l + 2][l]) {
-//          if (game[0][0] == 'O' || game[0][0] == 'X') {
-//             return true;
-//          }
-//       }
-//       return false;
-//    },
-
-//    intializeGame() {
-//       var game = [];
-//       for (let i = 0; i <= 2; i++) {
-//          game.push([]);
-//          for (let j = 0; j <= 2; j++)
-//             game[i][j] = '-';
-//       }
-//       return game;
-//    },
-
-
-//    computerPlayer(game) {
-//       var arr;
-//       var flag = false;
-//       while (flag == false) {
-//          var x = this.random();
-//          var y = this.random();
-//          if (game[x][y] == '-') {
-//             arr = this.mark(game, x, y, 'O');
-//             flag = true;
-//          }
-//       }
-//       return game;
-//    },
-//    computerPlayer(game) {
-//       var arr;
-//       var flag = false;
-//       while (flag == false) {
-//          var x = this.random();
-//          var y = this.random();
-//          if (game[x][y] == '-') {
-//             arr = this.mark(game, x, y, 'O');
-//             flag = true;
-//          }
-//       }
-//       return game;
-//    },
-//    check(game) {
-//       for (let i = 0; i <= 2; i++) {
-//          if (game[i][0] == game[i][1] && game[i][1] == game[i][2]) {
-//             if (game[i][0] == 'O' || game[i][0] == 'X') {
-//                return true;
-//             }
-//          }
-//          if (game[0][i] == game[1][i] && game[1][i] == game[2][i]) {
-//             if (game[0][i] == 'O' || game[0][i] == 'X') {
-//                return true;
-//             }
-//          }
-//       }
-//       var k = 0, l = 0;
-//       if (game[k][k] == game[k + 1][k + 1] && game[k + 1][k + 1] == game[k + 2][k + 2]) {
-//          if (game[0][0] == 'O' || game[0][0] == 'X') {
-//             return true;
-//          }
-//       }
-//       if (game[l][l + 2] == game[l + 1][l + 1] && game[l + 1][l + 1] == game[l + 2][l]) {
-//          if (game[0][0] == 'O' || game[0][0] == 'X') {
-//             return true;
-//          }
-//       }
-//       return false;
-//    },
-
 
 }

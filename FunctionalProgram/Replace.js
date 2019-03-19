@@ -10,17 +10,17 @@
  *****************************************************************************/ var Utility = require('./Utility');
 var read = require('readline-sync');
 
+var format = /[a-zA-Z]/;
+var name = read.question('Enter the name :')
+if (format.test(name)) {
+    if (name.length <= 3) {
+        Utility.replace(name);
+    }
+    else {
+        console.log('username has min 3 char ');
+    }
+}
+else {
+    console.log('Enter the string');
 
-//declare data
-str1 = "Hello username how are you?"
-//taking input from the user
-var str2 = read.question("Enter string u want to repalce: ")
-var str3 = read.question("Enter string you  want to replace with: ")
-
-Utility.replace(str1, str2, str3);
-
-
-
-
-
-
+}
