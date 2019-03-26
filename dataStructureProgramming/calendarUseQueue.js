@@ -3,7 +3,7 @@
  *               
  * @description
  * @file       :  calenderUsingQue.js
- * @author     :  Prasanna More
+ * @author     :  VAIBHAW
  * @version    :  1.0
  * @since      :  21-2-2019
  * 
@@ -23,7 +23,7 @@ try {
         throw "Enter valid year"
     }
 
-    ud.calenderUsingQue(month,year);
+    ud.calendarUsingQue(month,year);
 
 }
 catch (err) {

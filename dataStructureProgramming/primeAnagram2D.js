@@ -3,7 +3,7 @@
  *               
  * @description
  * @file       :  primeAnagram2D.js
- * @author     :  Prasanna More
+ * @author     :  VAIBHAW
  * @version    :  1.0
  * @since      :  21-2-2019
  * 
