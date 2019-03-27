@@ -11,7 +11,7 @@
  ******************************************************************************/
 var Utility =require('./Utility');
 
-var read = require('readline-sync');
+
 //taking the input from the user
 var string1= read .question("enter The First String:");
 var string2= read .question("enter The second String:");
