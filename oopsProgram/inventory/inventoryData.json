@@ -1,0 +1,38 @@
+{
+    "Rice": [
+        {
+            "name": "Kallimuch",
+            "weight": 5,
+            "price": 190
+        },
+        {
+            "name": "Basmati",
+            "weight": 6,
+            "price": 250
+        }
+    ],
+    "Wheats": [
+        {
+            "name": "Nonbranded",
+            "weight": 10,
+            "price": 300
+        },
+        {
+            "name": "Aahar",
+            "weight": 4,
+            "price": 260
+        }
+    ],
+    "Pulse": [
+        {
+            "name": "Samarth",
+            "weight": 8,
+            "price": 600
+        },
+        {
+            "name": "Fresh Dal",
+            "weight": 4,
+            "price": 800
+        }
+    ]
+}

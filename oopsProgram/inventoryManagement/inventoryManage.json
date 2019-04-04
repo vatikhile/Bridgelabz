@@ -1,0 +1,19 @@
+{
+    "stock": [
+        {
+            "stock_name": "Standard chartered",
+            "Num_of_shares": 1090,
+            "share_price": 1996
+        },
+        {
+            "stock_name": "ICICI",
+            "Num_of_shares": 2120,
+            "share_price": 1045
+        },
+        {
+            "stock_name": "Hdfc",
+            "Num_of_shares": 1000,
+            "shares_price": 2
+        }
+    ]
+}

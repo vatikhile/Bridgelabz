@@ -1,0 +1,52 @@
+{
+    "doctor": [
+        {
+            "drName": "Beena",
+            "drId": "23",
+            "speciality": "Cardiologist",
+            "availability": "AM",
+            "NoOfAppointment": 0
+        },
+        {
+            "drName": "Chandran",
+            "drId": "29",
+            "speciality": "Dermatologist",
+            "availability": "PM",
+            "NoOfAppointment": 1
+        },
+        {
+            "drName": "aksh",
+            "drId": "jsagd",
+            "speciality": "jbk",
+            "availability": "jhb",
+            "NoOfAppointment": 0
+        }
+    ],
+    "patient": [
+        {
+            "pName": "Akshay",
+            "pId": "19",
+            "mobNo": "6737435735",
+            "age": "21"
+        },
+        {
+            "pName": "Anshina",
+            "pId": "30",
+            "mobNo": "9011548554",
+            "age": "21"
+        },
+        {
+            "pName": "jhsa",
+            "pId": "kjsa",
+            "mobNo": "7988995463",
+            "age": "23"
+        }
+    ],
+    "cliniqueAppointment": [
+        {
+            "drName": "Gokul",
+            "pName": "akshay",
+            "time": "PM"
+        }
+    ]
+}

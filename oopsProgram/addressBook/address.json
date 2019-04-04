@@ -1,0 +1,36 @@
+{
+    "person": [
+        {
+            "firstName": "Akshay",
+            "lastName": "K C",
+            "address": "jalahalli",
+            "city": "bengaluru",
+            "zip": "560013",
+            "mobile": "7019782567"
+        },
+        {
+            "firstName": "Krishna ",
+            "lastName": "murthy ",
+            "address": "rajajinagar",
+            "city": "bengaluru",
+            "zip": "560057",
+            "mobile": "3546589745"
+        },
+        {
+            "firstName": "laxman",
+            "lastName": "pole",
+            "address": "vashi",
+            "city": "pune",
+            "zip": "601205",
+            "mobile": "7534753745"
+        },
+        {
+            "firstName": "Deeksha",
+            "lastName": "S J",
+            "address": "chickballapur",
+            "city": "chitradurga",
+            "zip": "577501",
+            "mobile": "9987524135"
+        }
+    ]
+}
